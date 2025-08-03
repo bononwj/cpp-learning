@@ -1,0 +1,21 @@
+# MSYS2 bashrc配置说明
+# 编辑文件：D:\msys64\home\你的用户名\.bashrc
+
+# 添加以下内容到 .bashrc 文件末尾：
+
+# 代理设置
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+export HTTP_PROXY="http://127.0.0.1:7890"
+export HTTPS_PROXY="http://127.0.0.1:7890"
+
+# 如果使用SOCKS5代理，使用以下设置：
+# export http_proxy="socks5://127.0.0.1:7890"
+# export https_proxy="socks5://127.0.0.1:7890"
+
+# Git代理设置
+git config --global http.proxy "http://127.0.0.1:7890"
+git config --global https.proxy "http://127.0.0.1:7890"
+
+# 测试代理连接
+echo "代理设置已加载" 

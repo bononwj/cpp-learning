@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build calculator",
+      "type": "shell",
+      "command": "D:/msys64/mingw64/bin/clang++.exe",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-g",
+        "${workspaceFolder}/week1/day1/calculator.cpp",
+        "-o",
+        "${workspaceFolder}/week1/day1/calculator.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "run calculator",
+      "type": "shell",
+      "command": "chcp 65001 && ${workspaceFolder}/week1/day1/calculator.exe",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "dependsOn": "build calculator"
+    },
+    {
+      "label": "build and run",
+      "dependsOrder": "sequence",
+      "dependsOn": ["build calculator", "run calculator"],
+      "group": "test"
+    }
+  ]
+}
