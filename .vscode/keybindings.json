@@ -1,0 +1,22 @@
+[
+  {
+    "key": "cmd+shift+b",
+    "command": "workbench.action.tasks.runTask",
+    "args": "编译当前C++文件"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.tasks.runTask",
+    "args": "运行当前C++文件"
+  },
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.action.tasks.runTask",
+    "args": "编译并运行当前C++文件"
+  },
+  {
+    "key": "cmd+shift+c",
+    "command": "workbench.action.tasks.runTask",
+    "args": "使用CMake编译项目"
+  }
+]
