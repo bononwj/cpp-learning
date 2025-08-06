@@ -89,6 +89,9 @@
     "sstream": "cpp",
     "stack": "cpp",
     "variant": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "__threading_support": "cpp",
+    "cstddef": "cpp",
+    "__config": "cpp"
   }
 }
